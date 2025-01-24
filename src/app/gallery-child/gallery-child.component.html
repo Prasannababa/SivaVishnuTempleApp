@@ -1,11 +1,9 @@
-<div *ngIf="!imagesLoaded">Loading calendar...</div>
-<gallery-child *ngIf="imagesLoaded" [images]="images"></gallery-child>
-<!-- <div class="gallery-container"  *ngIf="images.length > 0">
+<div class="gallery-container">
   <div class="gallery-item" *ngFor="let image of images" (click)="openModal(image.webContentLink)">
     <img [src]="image.webContentLink" [alt]="image.name" />
     <div class="image-name">{{ image.name }}</div>
   </div>
-</div> -->
+</div>
   
   <!-- Modal for Full-Screen Preview -->
   <div class="modal-overlay" *ngIf="selectedImage" (click)="closeModal()">

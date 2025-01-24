@@ -12,5 +12,5 @@ import { ReactiveFormsModule } from '@angular/forms';  // Import ReactiveFormsMo
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'TempleApp';
+  title = 'SivaVishnuTemple';
 }
