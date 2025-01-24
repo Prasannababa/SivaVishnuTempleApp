@@ -1,0 +1,15 @@
+<div class="trustees-container">
+    <h2>Meet Our Trustees</h2>
+    <div class="trustee-list row">
+      <div *ngFor="let trustee of trustees" class="trustee-card col-md-3">
+        <img [src]="trustee.image" alt="Trustee Image" class="trustee-image">
+        <div class="trustee-info">
+          <h3>{{ trustee.name }}</h3>
+          <p><strong>Position:</strong> {{ trustee.position }}</p>
+          <p><strong>Email:</strong> <a [href]="'mailto:' + trustee.email">{{ trustee.email }}</a></p>
+          <p class="profile"><strong>Profile:</strong> {{ trustee.profile }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

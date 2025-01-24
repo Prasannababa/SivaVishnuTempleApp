@@ -1,0 +1,104 @@
+<div class="main-container">
+  <section>
+    <div class="image-slider">
+      <div class="slider-track">
+        <div class="slide" *ngFor="let image of images">
+          <div [style.background-image]="'url('+image+')'" class="banner-img"></div>
+        </div>
+      </div>
+    </div>
+    <div class="announcements-marquee">
+      <marquee *ngIf="announcements.length" behavior="scroll" direction="left">
+        {{ announcements.join(' | ') }}
+      </marquee>
+    </div>
+    <!-- <div class="announcement-section">
+      <h1>Grand Opening Ceremony</h1>
+      <p>We are thrilled to invite you to the **Grand Opening** of the <span class="highlight">Sri Venkateswara Temple</span>.</p>
+      <p><strong>Date:</strong> Sunday, 25th November 2024</p>
+      <p><strong>Time:</strong> 7:00 AM to 12:00 PM</p>
+      <p><strong>Location:</strong> 123 Temple Road, Chennai, India</p>
+      <p>✨ Join us for Traditional Pooja, Cultural Performances, and Prasad Distribution!</p>
+      <p class="highlight">All Are Welcome!</p>
+      <p>Let us come together to seek divine blessings on this auspicious occasion.</p>
+  </div> -->
+  </section>
+  <section class="about-temple">
+    <h2>Namaskaram!!!</h2>
+    <p>Siva Vishnu Temple of Ottawa has been established with the MISSION of offering religious services to the Hindu Community. 
+      In the next 5 years, the temple's VISION is to evolve into a spiritual and cultural organisation dedicated to promoting Vedas, Agamas, Puranas, Ritual and Spiritual Values along with the needed services for the community. 
+    <p>Rooted in ancient traditions, the Temple is a living symbol of faith and cultural heritage. Its architectural splendor is a tribute to the artisans who meticulously 
+      carved each stone, creating a masterpiece that transcends time. From its towering spires to its intricately adorned sanctum, every detail speaks of devotion and the pursuit of the divine.
+      At its core lies the sanctum sanctorum, radiating spiritual energy and housing the revered deity [Deity's Name]. Here, devotees come to offer prayers, express gratitude, 
+      and seek blessings. The rhythmic chants, the sacred rituals, and the gentle glow of the lamps create an atmosphere of profound reverence and peace, uplifting the hearts of all who gather.</p>
+    <p>The Temple is not just a place of worship but a sanctuary where life’s deeper questions find answers. It serves as a guiding light, encouraging virtues such as compassion, humility, and perseverance. 
+      Its festivals and ceremonies foster unity, bringing people together in joyous celebration of the divine.
+      Beyond its physical beauty, the Temple reminds us of the impermanence of material life and the eternal nature of the soul. It invites us to pause, reflect, and reconnect with the higher purpose that transcends our daily struggles.</p>
+      
+      <blockquote class="styled-quote">Śivāya Viṣṇu Rūpāya, Śiva Rūpāya Viṣṇave।
+        Śivasya Hṛdayaṁ Viṣṇuḥ Viṣṇośca Hṛdayaṁ Śivaḥ।। <cite> - Adi Shankaracharya</cite></blockquote>
+  </section>
+
+  <section>
+    <h2>Scheduled Home-Based Services available for pre-booking</h2>
+    <p>
+      SVTO offers the below listed Home-Based services for all devotees in Ottawa & other regions accessible from Ottawa by Road.  You can book for these by sending email or call/whatsapp to temple phone number.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Services</th>
+          <th>Estimated Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let service of services">
+          <td>{{ service.key }}</td>
+          <td>{{ service.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- <section class=" row deity-significance">
+    <div class="col-md-3 service-details">
+      <div class="service-card">
+        <div class="head">Puja</div>
+        <div class="content">Hindu Temple organizes Pooja's, Yajña, birthday pooja, havan etc. for the devotees within and outside Temple premises.</div>
+      </div>
+      <div class="service-card">
+        <div class="head">Social Events</div>
+        <div class="content">Hindu Temple organizes Pooja's, Yajña, birthday pooja, havan etc. for the devotees within and outside Temple premises.</div>
+      </div>
+      <div class="service-card">
+        <div class="head">Services</div>
+        <div class="content">Hindu Temple organizes Pooja's, Yajña, birthday pooja, havan etc. for the devotees within and outside Temple premises.</div>
+      </div>
+    </div>
+    <div class="col-md-6 service-img">
+    </div>
+    <div class="col-md-3 service-details">
+      <div class="service-card">
+        <div class="head">Religious Events</div>
+        <div class="content">Hindu Temple organizes Pooja's, Yajña, birthday pooja, havan etc. for the devotees within and outside Temple premises.</div>
+      </div>
+      <div class="service-card">
+        <div class="head">Festivals</div>
+        <div class="content">Hindu Temple organizes Pooja's, Yajña, birthday pooja, havan etc. for the devotees within and outside Temple premises.</div>
+      </div>
+      <div class="service-card">
+        <div class="head">Anadanam</div>
+        <div class="content">Hindu Temple organizes Pooja's, Yajña, birthday pooja, havan etc. for the devotees within and outside Temple premises.</div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="events-list">
+    <div *ngIf="!eventsLoaded">Loading calendar...</div>
+    <app-calendar *ngIf="eventsLoaded" [events]="events"></app-calendar>
+  </section>
+
+  <section class="join-community">
+    <h2>Join the Community</h2>
+    <button (click)="navigateToContactUs()">Join Now</button>
+  </section>
+</div>

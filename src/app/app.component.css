@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fff5e1; /* Light saffron */
+  color: #3e2723; /* Deep brown text */
+}
+
+h1, h2, h3 {
+  color: #d4a017; /* Gold headings */
+  text-align: center;
+  margin: 10px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: #ffc107;
+  padding: 5px 10px;
+}
+
+.logo-img {
+  height: 100px;
+  margin-right: 10px;
+}
+.Temple-name {
+  font-weight: bold;
+  font-size: 65px;
+  font-family: 'ganesha';
+}
+
+button {
+  background-color: #d4a017;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff8c42;
+}
+
+footer {
+  background-color: #d4a017;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+body {
+  background-color: #f4a300;
+  color: white;
+  font-family: 'Mukta', sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #e6ab00;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #cc5800;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+footer {
+  background-color: #cc5800;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+footer:before {
+  content: "🌸";  /* Lotus symbol */
+  font-size: 30px;
+}
+
+section {
+  background-color: transparent;  /* Make section background transparent */
+  padding: 20px;
+  margin: 20px 0;
+}

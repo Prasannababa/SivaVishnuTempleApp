@@ -1,0 +1,34 @@
+<div class="container my-3 cal-wrapper">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <button class="btn btn-outline-primary cal-btn" (click)="goToPreviousMonth()">&#8592;</button>
+      <h3 class="text-center cal-month">{{ currentMonth | date: 'MMMM yyyy' }}</h3>
+      <button class="btn btn-outline-primary cal-btn" (click)="goToNextMonth()">&#8594;</button>
+    </div>
+  
+    <div class="row text-center fw-bold border-bottom">
+      <div class="col cal-content cal-days">Sun</div>
+      <div class="col cal-content cal-days">Mon</div>
+      <div class="col cal-content cal-days">Tue</div>
+      <div class="col cal-content cal-days">Wed</div>
+      <div class="col cal-content cal-days">Thu</div>
+      <div class="col cal-content cal-days">Fri</div>
+      <div class="col cal-content cal-days">Sat</div>
+    </div>
+  
+    <div class="row text-center">
+      <ng-container *ngFor="let day of daysInMonth; let i = index">
+        <div #zeffyDiv class="col border p-2 cal-content"  [class.curr-date.text-white]="isToday(day.date)"
+        [class.event-hover]="day.events.length > 0" 
+        [class.text-muted]="day.date.getMonth() !== currentMonth.getMonth()"
+        (click)="openLink('https://www.zeffy.com/ticketing/sathya-naryana-pooja',day.events.length)">
+          <div>{{ day.date.getDate() }}</div>
+          <div *ngFor="let event of day.events" class="text-truncate cal-content">
+            {{ event }}
+          </div>
+        </div>
+        <!-- Break row after 7 days -->
+        <div *ngIf="(i + 1) % 7 === 0" class="w-100"></div>
+      </ng-container>
+    </div>
+  </div>
+  

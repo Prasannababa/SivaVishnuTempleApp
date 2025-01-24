@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffab07; 
+  color: white;
+  font-size: 18px;
+}
+
+.menu {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.language {
+  padding: 5px;
+  font-size: 16px;
+  background-color: white;
+  color: #000000;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+a.nav-link {
+  border-radius: 5px;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.nav-list a.active {
+  font-weight: bold;
+  color: #f39c12; /* Active color (saffron) */
+}
+
+.nav-list a:hover {
+  color: #007bff; /* Hover color */
+}
+
+.header .navbar{
+  padding: 0;
+}
+
+a.nav-link.active {
+  background-color: #cc7a00;
+  padding: 8px 5px;
+}
+
+.social-links {
+  display: inline-flex;
+}
+
+.social-links a {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #0073e6;
+  opacity: 0.8; /* Optional hover effect for slight dimming */
+}
+
+.social-links .fa-youtube {
+  color: #FF0000; /* Red color for YouTube */
+}
+
+.social-links .fa-facebook {
+  color: #4267B2; /* Blue color for Facebook */
+}

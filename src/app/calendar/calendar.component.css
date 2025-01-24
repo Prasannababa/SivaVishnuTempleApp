@@ -1,0 +1,79 @@
+.col {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .cal-month {
+    color: #cbac03;
+    font-weight: bold;
+}
+  .text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .text-muted {
+    color: #6c757d !important;
+  }
+  
+  .cal-wrapper{
+    border: 1px solid #ff7007;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .cal-btn{
+    color: #FFFFFF;
+    border-color: rgb(255, 217, 0);
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0 10px;
+  }
+
+  .cal-btn:hover{
+    color: #000000;
+    border-color: #000000;
+    background-color: rgb(255, 217, 0);
+  }
+
+  .col.cal-content.cal-days {
+    height: 50px;
+  }
+
+  .cal-content{
+    color: #cbac03;
+    font-weight: bold;
+  }
+
+  .cal-content.text-muted{
+    font-weight: normal;
+  }
+
+  .event-hover {
+    position: relative;
+    background-color: rgb(255 153 0 / 55%);
+    transition: background-color 0.3s ease;
+    color: #000000;
+  }
+
+  .col.border.p-2.cal-content.curr-date {
+    background-color: #ffd70082;
+    color: #000000; 
+  }
+
+  .event-hover .text-truncate.cal-content {
+    color: #000000;
+    width: 90%;
+  }
+  
+  .event-hover:hover {
+    background-color: rgba(246, 160, 0, 0.84);
+    border-radius: 5px;
+    cursor: pointer;
+  }

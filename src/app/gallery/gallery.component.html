@@ -1,0 +1,15 @@
+<div class="gallery-container">
+    <div class="gallery-item" *ngFor="let image of images" (click)="openModal(image.url)">
+      <img [src]="image.url" [alt]="image.title" />
+      <div class="image-title">{{ image.title }}</div>
+    </div>
+  </div>
+  
+  <!-- Modal for Full-Screen Preview -->
+  <div class="modal-overlay" *ngIf="selectedImage" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <img [src]="selectedImage" alt="Selected Image" />
+      <button class="close-button" (click)="closeModal()">X</button>
+    </div>
+  </div>
+  

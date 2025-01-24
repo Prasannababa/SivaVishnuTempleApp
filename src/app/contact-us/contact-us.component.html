@@ -1,0 +1,50 @@
+<div class="contact-container row">
+  <!-- <div class="blend-container" [style.background-color]="backgroundColor">
+    <img [src]="imageUrl" alt="Blended Image" class="blended-image" />
+  </div> -->
+    <!-- Left Section (Contact Person) -->
+    <div class="contact-person col-md-4">
+      <div class="profile-image">
+        <img src="assets/vignesh-guruji.JPG" alt="Contact Person">
+      </div>
+      <h3>Vignesh Gurukkal</h3>
+      <p><i class="fas fa-user-tie"></i> Temple Chief Priest</p>
+      <p><i class="fas fa-phone"></i> +1 613 250 2699</p>
+      <p><i class="fas fa-envelope"></i>agmavicky2000&#64;gmail.com</p>
+      <p><i class="fas fa-clock"></i> Mon-Fri: 9 AM - 9 PM</p>
+      <p class="profile">Shri Vignesh Gurukkal has earned the esteemed title of Shiva Aagama Choodamani from Kanchi Sankara Acharya after completing eight years f Veda Aagama studies at the Gurukulam in Kancheepuram.   He also holds a Master’s Degree in Siva Aagamas from Sri Venkateswara Vedic University in Tirupati.  Proficient in Tamil, Telegu & English, he has been rendering services at various temples and home based poojas in Canada since 2018.</p>
+    </div>
+  
+    <!-- Right Section (Contact Form) -->
+    <div class="contact-form col-md-8">
+      <h2>Get In Touch</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" formControlName="firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" formControlName="lastName">
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" formControlName="phoneNumber">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" formControlName="email">
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Contact Date</label>
+          <input type="date" id="date" formControlName="date">
+        </div>
+        <div class="form-group">
+          <label for="comments">Comments:(short description of your requirements)</label>
+          <textarea id="comments" formControlName="comments" rows="4" cols="50"></textarea>
+        </div>
+        <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+      </form>
+    </div>
+  </div>
+  

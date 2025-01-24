@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Kaival';
+    src: url('/assets/fonts/KaivalyaIkiikocom-0Wy9r.otf') format('opentype');
+    font-weight: normal; /* Adjust if needed */
+    font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+    font-family: 'ganesha';
+    src: url('/assets/fonts/Theganesha-V5OB.ttf') format('opentype');
+    font-weight: normal; /* Adjust if needed */
+    font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+    font-family: 'samarkan';
+    src: url('/assets/fonts/samarkan.ttf') format('opentype');
+    font-weight: normal; /* Adjust if needed */
+    font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+    font-family: 'prognostic';
+    src: url('/assets/fonts/Prognostic-MBRe.ttf') format('opentype');
+    font-weight: normal; /* Adjust if needed */
+    font-style: normal; /* Adjust if needed */
+}

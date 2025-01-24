@@ -1,0 +1,190 @@
+section {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+section.about-temple p{
+  text-align: justify;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 10px;
+}
+input, textarea {
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff7a00;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 95px;
+}
+button:hover {
+  background-color: #b42704;
+}
+
+.service-img{
+  background: url('/assets/lotus_bg.png') center center no-repeat;
+  background-size: contain;
+}
+
+.service-card{
+  padding: 20px 0px;
+}
+
+.head {
+  font-size: 18px;
+  color: #f30000;
+  font-weight: bold;
+  padding: 5px;
+  background: rgb(255 221 171 / 80%);
+  border-radius: 5px;
+}
+
+.content {
+  text-align: center;
+  padding: 5px;
+  background: rgb(251 230 230 / 35%);
+}
+
+.service-img, .service-details {
+  display: inline-block;
+}
+
+.main-container {
+  padding: 20px;
+  background: url('/assets/background_3.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.styled-quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #f3f3f3;
+  border-left: 4px solid #FF7000;
+  padding: 1rem;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  background-color: #23232399;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.styled-quote cite {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #ff870b;
+  text-align: right;
+  font-weight: bold;
+}
+
+.banner-img{
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+/* Image Slider Styles */
+.image-slider {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 10px; 
+  animation: scroll 10s linear infinite;
+}
+
+.slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Marquee Section Styles */
+.announcements-marquee {
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.announcement-section {
+  background-color: #585858d9;
+    color: #eeeeee;
+    padding: 20px;
+    border: 2px solid #de0505;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.announcement-section h1 {
+  color: #ffa14c;
+  margin-bottom: 10px;
+}
+.announcement-section p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+.highlight {
+  font-weight: bold;
+  color: #ffa337;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 2px solid #d4a017;
+}
+
+th {
+  background-color: #ffc107;
+}
+
+tr {
+  background: #e6d19087;
+}
+
+/* Keyframes for sliding effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
